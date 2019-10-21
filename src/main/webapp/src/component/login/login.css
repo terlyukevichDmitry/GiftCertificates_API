@@ -1,0 +1,72 @@
+.centerPlace {
+    margin-left: 125px;
+    margin-top: 60px;
+}
+
+
+.loginWord {
+    background-color: #e7e7e7;
+    padding:17px;
+    text-align: center;
+    color: #320049;
+    margin-bottom: 40px;
+}
+
+@media all and (min-width: 480px) {
+    .Login {
+        margin-top: 150px;
+        background-color: white;
+        padding: 0 0 30px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+  input.error {
+    border: 1px solid #EADAE4;
+  }
+  
+  .error {
+    color:red;
+    font-size: 0.625em;
+    display: relative;
+  }
+
+  .clientErrors {
+    color:red;
+    display: relative;
+    margin-left: 40px;
+    margin-bottom: -20px;
+  }
+  
+  .username {
+    margin-right: 1%;
+  }
+  
+  .username,
+  .password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .username {
+    width: 100%;
+  }
+  
+  .password {
+    width: 100%;
+  }
+  
+  .submit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .loadImage {
+    margin-left: 10px;
+  }

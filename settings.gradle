@@ -1,0 +1,6 @@
+rootProject.name = 'task2'
+
+include 'repository'
+include 'rest'
+
+ 

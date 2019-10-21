@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+version 'unspecified'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+} 
+
+dependencies {
+    compile group: 'org.mybatis', name: 'mybatis-spring', version: '2.0.2'
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.1.0'
+
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.24.RELEASE'
+    compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.24.RELEASE'
+    
+    compile group: 'org.hibernate', name: 'hibernate-validator', version: '6.0.17.Final'
+    compile group: 'org.hibernate', name: 'hibernate-validator-cdi', version: '6.0.17.Final'
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.12.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.12.0'
+}
