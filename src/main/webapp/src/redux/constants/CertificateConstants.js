@@ -1,0 +1,5 @@
+export const certificateConstants = {
+    CERTIFICATE_SUCCESS: 'CERTIFICATE_SUCCESS',
+    CERTIFICATE_ERROR: 'CERTIFICATE_ERROR',
+    CLOSE_FORM: 'CLOSE_FORM'
+};

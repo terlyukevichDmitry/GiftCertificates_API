@@ -3,16 +3,16 @@ import React, {Fragment} from 'react';
 import Portal from '../Portal';
 import Button from '../Button';
 
-import '../tags.css';
-import '../modal.css';
+import './tags.css';
+import './modal.css';
 
 export default class ViewModal extends React.Component {
     constructor(props) {
-          super(props);
-          this.state = {
-          certificate: props.certificate,
-          isOpen: false,
-          };
+      super(props);
+      this.state = {
+        certificate: props.certificate,
+        isOpen: false,
+      };
     }
 
   openModal = () => {
@@ -27,7 +27,7 @@ export default class ViewModal extends React.Component {
     const { isOpen, certificate } = this.state;
     return (
       <div>
-        <Button className="btn btn-primary"  onClick={this.openModal}>View </Button>
+        <Button className="btn btn-primary" onClick={this.openModal}>View </Button>
         {isOpen &&
         <Portal>
           <div className="modalOverlay">
@@ -68,7 +68,7 @@ export default class ViewModal extends React.Component {
                     </div>
               </div>
               <div className="modalFooter">
-                  <Button className="btn btn-secondary" style={cancelStyle} onClick={this.closeModal} invert>&nbsp;Cancel&nbsp;</Button>
+                  <Button className="btn btn-secondary" style={{padding: '6px 15px 6px 15px', color:'black', background:'#e1e1e5', border: '1px solid #b3b3b5'}} onClick={this.closeModal}>Cancel</Button>
               </div>
             </div>
           </div>
@@ -77,10 +77,4 @@ export default class ViewModal extends React.Component {
       </div>
     );
   }
-}
-
-const cancelStyle = {
-  color:'black',
-  background:'#e1e1e5',
-  border: '1px solid #b3b3b5'
 }

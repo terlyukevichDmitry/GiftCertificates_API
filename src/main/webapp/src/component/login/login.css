@@ -3,7 +3,6 @@
     margin-top: 60px;
 }
 
-
 .loginWord {
     background-color: #e7e7e7;
     padding:17px;
@@ -25,48 +24,43 @@
     }
   }
 
-  input.error {
-    border: 1px solid #EADAE4;
-  }
-  
-  .error {
-    color:red;
-    font-size: 0.625em;
-    display: relative;
-  }
-
   .clientErrors {
-    color:red;
+    color:#dc3545;
     display: relative;
     margin-left: 40px;
     margin-bottom: -20px;
   }
   
-  .username {
-    margin-right: 1%;
+  
+
+  .footerLogin {
+    margin-top: 171px;
+    flex-shrink: 0;
+    padding-top: 15px; 
+    text-align: center;
+    background-color: #424242;
+    color: #acacac;
   }
   
-  .username,
-  .password {
+  #root {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    height: 100%;
   }
   
-  .username {
-    width: 100%;
-  }
-  
-  .password {
-    width: 100%;
-  }
-  
-  .submit {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  .footerStyleLogin {
+    background-color: #424242;
+    color: #acacac;
+    text-align: center;
+    padding: 17px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%
   }
 
-  .loadImage {
-    margin-left: 10px;
+  .customLoginButton {
+    padding: 5px 20px 5px 20px;
+    font-weight: bold;
   }
